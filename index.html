@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <h1 id="title"> Ghana Survey Form</h1>
+    <p id="description"> Thank you for helping reset the country </p>
+    <form id="survey-form">
+        <label id="name-label"> Name
+            <input id="name" type="text" required placeholder="Enter your name" />
+        </label>
+        <label id="email-label"> Email
+            <input id="email" type="email" required placeholder="Enter your Email" />
+        </label>
+        <label id="number-label" > Age
+            <input type="number" id="number" min="18" max="60" placeholder="Age" />
+        </label>
+        <label>
+            What's your gender
+            <select id="dropdown">
+                <option>Select an option</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select>
+        </label>
+        <label>
+            Did you vote last year?
+            <label class="option" >
+            <input type="radio" name="vote" checked value="Undisclose"> Will not disclose
+            </label>
+            <label class="option" >
+            <input type="radio" name="vote" value="yes" /> Yes
+            </label>
+            <label class="option" >
+            <input type="radio" name="vote" value="no" /> No
+            </label>
+
+        </label>
+        <label>
+            What influence your vote?
+            <label class="option" >
+            <input type="checkbox" value="economy" /> Economy
+            </label>
+            <label class="option" >
+            <input type="checkbox" value="Religion-Tribe" /> Religion & Tribe Affiliations
+            </label>
+            <label class="option" >
+            <input type="checkbox" value="Party-Candidate" /> Party Reputation & Candidate Image
+            </label>
+            <label class="option" >
+            <input type="checkbox" value="Media-Compaigns" /> Media & Compaigns
+            </label>
+        </label>
+        <label>
+            Drop your experience or comments on the Last election 
+            <textarea placeholder="Enter your comments here" ></textarea>
+        </label>
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #fff;
+  background: url("./432484.jpg") center/cover no-repeat fixed;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(50, 0, 120, 0.55);
+  z-index: 0;
+}
+
+
+#survey-form {
+  position: relative;
+  z-index: 1;
+  max-width: 550px;
+  margin: 50px auto;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 40px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+#title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 2rem;
+  position: relative;
+  z-index: 1;
+}
+#description {
+  text-align: center;
+  margin: 10px 0 30px;
+  color: #ccc;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+#survey-form label {
+  display: block;
+  margin: 20px 0 8px;
+  font-weight: 500;
+}
+
+#survey-form input[type="text"],
+#survey-form input[type="email"],
+#survey-form input[type="number"],
+#survey-form select,
+#survey-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #f7f7f7;
+  color: #000;
+  font-size: 1rem;
+  margin-top: 6px;
+}
+
+#survey-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+#survey-form input[type="radio"],
+#survey-form input[type="checkbox"] {
+  margin: 10px 8px 0 0;
+  transform: scale(1.1);
+}
+
+#survey-form button {
+  display: block;
+  width: 100%;
+  background: #37af65;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#survey-form button:hover {
+  background: #2e8b54;
+}
+
+
